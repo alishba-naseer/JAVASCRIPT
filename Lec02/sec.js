@@ -88,7 +88,95 @@ console.log("5 >= 4 ", g >= h);
 console.log("5 <= 4 ", g <= h);
 
 //                                     LOGIC OPERATORS
+let j = 6;
+let k = 2;
+
+let cond1 = j > k;
+let cond2 = j === 6;
+let cond3 = k === 6;
+console.log("j =", j , " &  k =", k );
+console.log("cond1 && cond2", cond1 && cond2);
+console.log("cond1 && cond3", cond1 && cond3);
+
+//         we can also write condition as follow!
+console.log("cond1 && cond2", j > k && k === 4);
+console.log("cond1 || cond2", j > k || k === 6);
+console.log("!(6 < 2 ) =", !(j < k));
+
+//                                 CONDITIONAL STATEMENTS
+//                                  use if statement
+
+// let age = 25;
+// if (age >= 18){
+//     console.log("You can vote!");
+// }
+
+// let mode = "dark";
+// let mode = "light";
+
+// let color;
+
+// if (mode === "dark"){
+//     color = "black";
+// }
+
+// if (mode === "light"){
+//     color = "white";
+// }
+// console.log(color);
+
+//                              If-else Statement
+let mode = "light";
+
+let color;
+
+if (mode === "dark"){
+    color = "black";
+}else {
+    color ="white";
+}
+console.log(color);
+
+let age = 25;
+// let age = 15;
+
+if (age > 18 ){
+    console.log(age ,"vote");
+}else {
+    console.log(age, "Not vote");
+}
 
 
+let num = 10;
+if (num % 2 === 0){
+    console.log(num , "is even");
+}else {
+    console.log(num , "is odd");
+}
 
+//                        else-if statement
+let background = "dark";      //blue , silver
+let text ;
+if(background === "dark"){
+    text = "black";
+} else if(background === "blue") {
+    text = "blue";
+}  else if(background === "pink") {
+    text = "pink";
+} else {
+    text = "white";
+}
 
+console.log(text);
+
+//                            Ternary operators
+let cgpa = 4 ; // 2
+let result = cgpa > 3 ? "pass" : "not pass";
+console.log(result);
+
+cgpa > 3 ? console.log("pass") : console.log("not pass");  //simpler , compact if else
+
+//                               ALERT , PROMPT
+// alert("hello !");
+let user = prompt("hello !");
+console.log(user);
