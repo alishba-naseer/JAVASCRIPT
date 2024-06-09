@@ -35,7 +35,40 @@
  let sum = 0;
  for(let val of marks){
     sum += val ;
- }  
- console.log("Sum of 85,97,44,37,76,60 =", sum);
- let avg = sum / marks.length;
- console.log(`Avg marks of the class = ${avg}`);
+    }  
+    console.log("Sum of 85,97,44,37,76,60 =", sum);
+    let avg = sum / marks.length;
+    console.log(`Avg marks of the class = ${avg}`);
+
+//! PRACTICE Q02 For a given array with price of 5 items -> [250,645,300,900,50] All items have an offer of 10% OFF on them . Change the array to store final price after applying offer.
+
+let items = [250,645,300,900,50];
+// let i = 0
+// for (let val of items){
+//   console.log(`Value at index ${i} = ${val}`);
+//   let offer = val / 10;
+//   items[i] = items[i] - offer;
+//   console.log(`Value after offer = ${items[i]}`);
+//   i++;
+// }
+
+     
+for (let i = 0; i < items.length; i++){
+  let offer = items[i] / 10;
+  items[i] -= offer;
+}
+console.log(items);
+
+//?                                     ARRAY METHODS -> Push()
+let foodItems = ["Apple","Lychee","Potato","Tomato"];
+console.log(foodItems);
+
+foodItems.push("Chips","Burger","Chocolate");   // Push -> add to end
+console.log(foodItems);
+
+let deletedItems = foodItems.pop();           // Pop -> delete form end and return 
+console.log(foodItems);
+console.log(`deleted item "${deletedItems}"`);  
+
+let marksStr = [50,60,70,80,90];
+console.log(marksStr.toString());
