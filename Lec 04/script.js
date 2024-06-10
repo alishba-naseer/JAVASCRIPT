@@ -66,9 +66,65 @@ console.log(foodItems);
 foodItems.push("Chips","Burger","Chocolate");   // Push -> add to end
 console.log(foodItems);
 
-let deletedItems = foodItems.pop();           // Pop -> delete form end and return 
+let deletedItems = foodItems.pop();           //? Pop -> delete form end and return 
 console.log(foodItems);
 console.log(`deleted item "${deletedItems}"`);  
 
 let marksStr = [50,60,70,80,90];
 console.log(marksStr.toString());
+
+//?                                         CONCAT() -> Join multiple arrays and return result
+  let marvelHeroes = ["Thor","Spiderman","Ironman"]; 
+  let dcHerose = ["Superman","Batman"];
+  let pakHeroes = ["Quaid-e-Azam","Allama Iqbal"];
+  let Heroes = marvelHeroes.concat(dcHerose,pakHeroes);
+  console.log(Heroes);
+
+
+//?                                  UNSHIFT() ->add to start
+  let fruits = ["Apple","Peach","Lychee"];
+    fruits.unshift("Mango");
+   console.log(fruits);
+
+//?                                    SHIFT() -> delete from start and return 
+  let veggies = ["Potato","Tomato","Chilli"];
+  let val = veggies.shift();
+  console.log(`Deleted value = "${val}"`);    
+
+//?                                    SLICE() -> return a piece of array
+   let sportsGames = ["Hockey","Cricket","Football","TableTennis","Badminton","Basketball"];
+   console.log(sportsGames);
+   console.log(sportsGames.slice(1,4));
+
+//?                                     SPLICE() -> change original array -> (add, remove, replace)  
+  let arr = [1,2,3,4,5,6,7];
+  //  arr.splice(2,2,101,102);
+  // console.log(arr);
+
+  //?ADD ELEMENT
+
+  // arr.splice(2,0,101);
+  // console.log(arr);
+
+  //? DELETE ELEMENT
+
+  // arr.splice(3,1);
+  // console.log(arr);
+
+  //? REPLACE ELEMENT
+  arr.splice(3,1,101);
+  console.log(arr);
+
+//! PRACTICE QNO3 -> Create an array to store companies -> "Bloomberg","Microsoft","Uber","Google","IBM","Netflix"   a) Remove the first company from the array. b) Remove the Uber and Ola in its place.  c) Add Amazon at the end.
+
+  let companies = ["Bloomberg","Microsoft","Uber","Google","IBM","Netflix"];
+  // console.log(companies);
+
+  // companies.shift();         //Ans a)
+  // console.log(companies);
+
+  // companies.splice(2,1,"Ola");   //Ans b)
+  // console.log(companies);
+
+  companies.push("Amazon");          //Ans c)
+  console.log(companies);
