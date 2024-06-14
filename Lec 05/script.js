@@ -103,3 +103,64 @@
    console.log(`${divide} divide by 5 = ${divide / 5 }`);
  }
  divide.forEach(calDivision);
+
+//?                               MAP -> create new array
+ let numbers =[6,8,10,12,14];
+   numbers.map((val) => {
+  console.log(val);
+  });
+
+//? Another way
+  let numb = [12,14,16,18];
+  let newArray = numb.map((val) => {
+    return val * 2;
+    });
+  console.log(newArray);
+
+//?                           FILTER -> condition true
+ let array = [1,2,3,4,5,6,7,8,9];
+ let evenArr = array.filter((val) => {
+  // return val % 2 === 0;  
+  // return val % 2 !== 0;  
+  return val > 3;  
+ });
+ console.log(evenArr);
+
+//?                     REDUCE -> calculate and return the single value
+  let reduceArr = [1,2,3,4];
+  let output = reduceArr.reduce((res , curr) => {
+    return res + curr;
+  });
+  console.log("Sum of total value =", output);
+
+//?   Maximum number calculate
+ let maxArr = [89,101,200,500];
+ let maxOutput = maxArr.reduce((pre , curr) => {
+  return pre > curr ? pre : curr;
+ });
+  console.log("Maximum num =", maxOutput);
+
+//! PRACTICE QNO4 -> We are given array of marks of students. Filter out of the marks of students that scored 90+ .
+  let stuMarks = [97,64,32,49,99,96,86];
+  let marksOutput = stuMarks.filter((val) => {
+    return val > 90 ;
+  });
+  console.log(marksOutput);
+
+//! PRACTICE QNO5 -> Take a number n as input from user. Create an array of numbers from 1 to n. Use the reduce method to caculate sum of all numbers in the array. Use the reduce method to calculate product of all numbers in the array.
+  let n = prompt("Enter a number :");
+  let Arr = [];
+  for (let i = 1; i <= n; i++){
+    Arr[i-1] = i;
+  }
+  console.log(Arr);
+
+  let sumValue = Arr.reduce((res , curr) => {
+    return res + curr;
+  });
+  console.log("Sum value =", sumValue);
+
+  let factorial = Arr.reduce((res , curr) => {
+    return res * curr;
+  });
+  console.log("Factorial value =", factorial);
