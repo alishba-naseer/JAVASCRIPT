@@ -1,0 +1,29 @@
+  #div1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(161, 7, 100);
+    color: aliceblue;
+    border: 5px solid rgb(23, 7, 143);
+    margin-top: 20px;
+  }
+
+  #btn3{
+    background-color:crimson;
+    color: aliceblue;
+    margin-top: 20px;
+    border-radius: 50px;
+  }
+
+  #btn4{
+    border-radius: 50px; 
+  }
+
+  .dark{
+    background-color: black;
+    color: white;
+  }
+
+  .light{
+    background-color: white;
+    color: black;
+  }
